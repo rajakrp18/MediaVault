@@ -54,11 +54,6 @@ def get_yt_dlp_options(quiet=True) -> dict:
         'ignoreerrors': False,
         'nocheckcertificate': True,
         'geo_bypass': True,
-        'extractor_args': {
-            'youtube': {
-                'player_client': ['android', 'web']
-            }
-        },
     }
 
     # Priority 1: Use browser cookies if configured
