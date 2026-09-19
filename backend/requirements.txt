@@ -1,0 +1,9 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+yt-dlp>=2024.3.10
+static-ffmpeg>=2.5
+sse-starlette>=2.0.0
+pydantic>=2.6.0
+requests>=2.31.0
+mutagen>=1.47.0
+pillow>=10.0.0
