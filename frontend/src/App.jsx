@@ -8,8 +8,8 @@ import CookieSettings from './components/CookieSettings';
 
 import { Video, ListVideo, Layers, FolderDown, ShieldCheck, Zap, Globe, Settings } from 'lucide-react';
 
-// Auto-detect backend: always port 8008 on the same host as the frontend
-const API_BASE = `${window.location.protocol}//${window.location.hostname}:8008`;
+// Auto-detect backend: use env var for production, fallback to localhost:8008 for dev
+const API_BASE = import.meta.env.VITE_API_BASE_URL || `${window.location.protocol}//${window.location.hostname}:8008`;
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('single');
